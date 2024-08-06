@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/homePage.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="./Exam System Home Page_files/style.css">
+ <title>Exam System Home Page</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+          <div class="logo">Exam System</div>
+          <ul class="nav-links">
+              <li><a href="http://127.0.0.1:5500/homePage.html#home"> Home </a></li>
+              <li><a href="http://127.0.0.1:5500/homePage.html#about"> Dashboard </a></li>
+              <li><a href="http://127.0.0.1:5500/homePage.html#upcoming-exam">Upcoming Exam</a></li>
+              <li><a href="http://127.0.0.1:5500/homePage.html#result"> Result </a></li>
+              <li><a href="http://127.0.0.1:5500/homePage.html#result"> Profile </a></li>
+          </ul>
+      </div>
+  </nav>
+  <!-- Add content sections here -->
+  <section id="home">
+      <h2 class="home-update"> Latest Updates </h2>
+      <ul>
+        <li><strong>July 20, 2024:</strong> <em>New Feature Release:</em> We are excited to announce the launch of our Automated Grading feature. This new addition will allow for faster and more accurate grading of objective questions, saving time for teachers and providing quicker feedback to students.</li>
+        <li><strong>July 15, 2024:</strong> <em>Scheduled Maintenance:</em> Please note that our system will undergo maintenance on July 30, 2024, from 12:00 AM to 4:00 AM. During this time, the website will be temporarily unavailable. We apologize for any inconvenience this may cause and appreciate your understanding as we work to improve our services.</li>
+        <li><strong>July 10, 2024:</strong> <em>New Courses Added:</em> We have recently added several new courses to our platform, including Introduction to Machine Learning, Advanced Data Structures, and Web Development Essentials. Enroll now to enhance your learning experience.</li>
+        <li><strong>July 5, 2024:</strong> <em>Exam Schedule Update:</em> The exam schedule for the upcoming semester has been updated. Please check the Upcoming Exams section for the latest dates and times.</li>
+    </ul>
+  </section>
+  <section id="about">
+      <h2>About Us</h2>
+      <p>We provide the best exam management system.</p>
+  </section>
+  <section id="upcoming-exam">
+      <h2>Upcoming Exam</h2>
+      <p>Check out the upcoming exams.</p>
+  </section>
+  <section id="courses">
+      <h2>Courses</h2>
+      <p>Explore our courses.</p>
+  </section>
+  <section id="result">
+      <h2>Result</h2>
+      <p>View your exam results here.</p>
+  </section>
+</header>
+<script src="./Exam System Home Page_files/script.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

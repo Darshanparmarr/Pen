@@ -1,0 +1,9 @@
+function login(){
+  var user = document.getElementById('username').value;
+  var pass = document.getElementById('password').value;  
+  if(user == 'darshan123@gmail.com' && pass == 'darshan1234'){
+    window.location.assign('homePage.html')
+  }else{
+    alert('Enter correct email and password');
+  }
+}
